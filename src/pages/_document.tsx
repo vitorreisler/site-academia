@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -8,16 +9,16 @@ export default function Document() {
       <Head />
       <body>
         <header className="mb-5">
-          <Navbar/>
+          <Navbar />
         </header>
         <Main />
         <NextScript />
         <footer className="mt-5">
-          <Footer/>
+          <Footer />
         </footer>
-      <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-      </body>
+        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js" defer />
 
+      </body>
     </Html>
   );
 }
