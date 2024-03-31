@@ -4,6 +4,7 @@ import crossfi_teach from "../../public/images/crossfit-teacher2.jpg";
 
 const treinadores = [
   {
+    id:1,
     modalidade: "Yoga",
     name: "Sara ",
     age: 20,
@@ -16,6 +17,7 @@ const treinadores = [
     alt: "yoga-teacher",
   },
   {
+    id:2,
     modalidade: "Musculação",
     name: "Roberto",
     age: 21,
@@ -29,6 +31,7 @@ const treinadores = [
   },
 
   {
+    id:3,
     modalidade: "Crossfit",
     name: "Jorge",
     age: 22,

@@ -6,7 +6,7 @@ const About = () => {
       <h1 className="my-3 text-3xl">Nossos Profissionais</h1>
       <div className="flex flex-wrap justify-center items-center gap-5">
         {treinadores.map((treinador: any) => (
-          <div className="hover:scale-105 transition duration-700">
+          <div key={treinador.id} className="hover:scale-105 transition duration-700">
             <Card
               key={treinador.name}
               name={treinador.name}
