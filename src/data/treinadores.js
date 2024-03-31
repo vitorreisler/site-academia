@@ -1,37 +1,45 @@
-import img1 from "../../public/images/vitor-perfil-3x4.jpg";
+import yoga_teach from "../../public/images/yoga-teacher.jpg";
+import musc_teach from "../../public/images/musculacao-teacher.jpg";
+import crossfi_teach from "../../public/images/crossfit-teacher2.jpg";
 
 const treinadores = [
-    {
-      name: "Vitor ",
-      age: 31,
-      height: 1.77,
-      weight: "84Kg",
-      hobby1: "Gym",
-      hobby2: "Sing",
-      hobby3: "Eat",
-      img: img1,
-    },
-    {
-      name: "aaaaa",
-      age: 21,
-      height: 1.79,
-      weight: "70Kg",
-      hobby1: "cut",
-      hobby2: "cut",
-      hobby3: "cut",
-      img: img1,
-    },
+  {
+    modalidade: "Yoga",
+    name: "Sara ",
+    age: 20,
+    height: 1.55,
+    weight: "57Kg",
+    hobby1: "Yoga",
+    hobby2: "Sing",
+    hobby3: "BeachTenis",
+    img: yoga_teach,
+    alt: "yoga-teacher",
+  },
+  {
+    modalidade: "Musculação",
+    name: "Roberto",
+    age: 21,
+    height: 1.79,
+    weight: "80Kg",
+    hobby1: "Gym",
+    hobby2: "Cook",
+    hobby3: "Read",
+    img: musc_teach,
+    alt: "gym-teacher",
+  },
 
-    {
-      name: "bbbbbbbb",
-      age: 91,
-      height: 1.3,
-      weight: "70Kg",
-      hobby1: "ooooo",
-      hobby2: "oooo",
-      hobby3: "ooooo",
-      img: img1,
-    },
-  ];
+  {
+    modalidade: "Crossfit",
+    name: "Jorge",
+    age: 22,
+    height: 1.8,
+    weight: "80Kg",
+    hobby1: "Crossfit",
+    hobby2: "Soccer",
+    hobby3: "Run",
+    img: crossfi_teach,
+    alt: "crossfit-teacher",
+  },
+];
 
-  export default treinadores
+export default treinadores;

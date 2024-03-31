@@ -1,4 +1,7 @@
+import Image from "next/image";
+
 const Card = (props: {
+  modalidade: string;
   name: string;
   age: number;
   height: number;
@@ -6,17 +9,27 @@ const Card = (props: {
   hobby1: string;
   hobby2: string;
   hobby3: string;
+  img: any;
+  alt: string;
 }) => {
-  const { name, age, height, weight, hobby1, hobby2, hobby3 } = props;
+  const {
+    modalidade,
+    name,
+    age,
+    height,
+    weight,
+    hobby1,
+    hobby2,
+    hobby3,
+    img,
+    alt,
+  } = props;
   return (
     <div className="max-w-52 rounded-lg overflow-hidden shadow-lg text-center">
-      <img
-        className="w-52 "
-        src="./images/vitor-perfil-3x4.jpg"
-        alt="Sunset in the mountains"
-      />
+      <Image src={img} alt={alt} width={208} height={50} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{name}</div>
+        <p className="py-2"> Modalidade: {modalidade} </p>
         <p className="text-gray-700 text-base">Idade: {age}</p>
         <p className="text-gray-700 text-base">Peso: {weight}</p>
         <p className="text-gray-700 text-base ">Altura: {height}</p>
