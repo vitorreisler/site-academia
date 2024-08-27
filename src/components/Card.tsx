@@ -45,7 +45,7 @@ const Card = (props: {
           {hobby3}
         </span>
       </div>
-    </div>
+    </div> 
   );
 };
 
