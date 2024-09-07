@@ -31,7 +31,7 @@ const Pacote = (props: {
           /mês
         </span>
       </div>
-      <ul role="list" className="space-y-5 my-7">
+      <ul role="list" className="space-y-5 my-7"> 
         <li className="flex items-center">
           <svg
             className="flex-shrink-0 w-4 h-4 text-green-400 dark:text-green-500"
